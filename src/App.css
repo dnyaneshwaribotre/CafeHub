@@ -1,0 +1,16 @@
+.category-chip {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.category-chip:hover {
+  transform: scale(1.08);
+  background-color: #ffefef;
+  color: #dc3545;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}

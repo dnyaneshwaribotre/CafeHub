@@ -1,0 +1,80 @@
+/* ===== Page Border ===== */
+.page-wrapper {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 2px solid rgba(220, 53, 69, 0.3); /* CraveEazy red */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: pageFade 0.6s ease-in-out;
+}
+
+/* ===== Page Load Animation ===== */
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Navbar Animation ===== */
+.navbar {
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Card Animation ===== */
+.card {
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Image Smooth Zoom ===== */
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Buttons Animation ===== */
+button,
+.btn {
+  transition: all 0.25s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Category Chips ===== */
+.category-btn {
+  transition: all 0.25s ease;
+}
+
+.category-btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+  transform: translateY(-2px);
+}

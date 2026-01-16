@@ -1,0 +1,64 @@
+.login-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #fff5f5, #ffeaea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Login Card */
+.login-card {
+  width: 360px;
+  padding: 25px;
+  border-radius: 16px;
+  animation: slideFade 0.8s ease;
+  z-index: 2;
+}
+
+/* Card Animation */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover */
+.login-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+}
+
+/* Floating food emojis */
+.food {
+  position: absolute;
+  font-size: 2.5rem;
+  animation: float 8s infinite linear;
+  opacity: 0.7;
+}
+
+.f1 { left: 10%; animation-duration: 7s; }
+.f2 { left: 30%; animation-duration: 9s; }
+.f3 { left: 60%; animation-duration: 8s; }
+.f4 { left: 80%; animation-duration: 10s; }
+
+@keyframes float {
+  from {
+    bottom: -50px;
+    transform: rotate(0deg);
+  }
+  to {
+    bottom: 110%;
+    transform: rotate(360deg);
+  }
+}

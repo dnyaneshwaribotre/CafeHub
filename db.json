@@ -1,0 +1,22 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Grillino",
+      "totalTables": 20,
+      "lat": 18.5204,
+      "lng": 73.8567
+    }
+  ],
+  "bookings": [
+    {
+      "id": 12345,
+      "hotel": "Grillino",
+      "date": "2026-01-16",
+      "fromTime": "15:00",
+      "endTime": "18:00",
+      "customer": "Rahul",
+      "email": "rahul@gmail.com"
+    }
+  ]
+}
